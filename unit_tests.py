@@ -25,7 +25,7 @@ class ZoneFileTests(unittest.TestCase):
         self.assertTrue(isinstance(zone_file, (str, bytes)))
         self.assertTrue("$ORIGIN" in zone_file)
         self.assertTrue("$TTL" in zone_file)
-        self.assertTrue("@ 1D URI" in zone_file)
+        self.assertTrue("@ 1D IN URI" in zone_file)
 
     def test_zone_file_creation_2(self):
         json_zone_file = zone_file_objects["sample_2"]

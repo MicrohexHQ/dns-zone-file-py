@@ -51,6 +51,7 @@ class ZoneFileTests(unittest.TestCase):
         self.assertTrue(isinstance(zone_file, dict))
         self.assertTrue("a" in zone_file)
         self.assertTrue("cname" in zone_file)
+        self.assertTrue("alias" in zone_file)
         self.assertTrue("mx" in zone_file)
         self.assertTrue("$ttl" in zone_file)
         self.assertTrue("$origin" in zone_file)
@@ -61,6 +62,7 @@ class ZoneFileTests(unittest.TestCase):
         self.assertTrue(isinstance(zone_file, dict))
         self.assertTrue("a" in zone_file)
         self.assertTrue("cname" in zone_file)
+        self.assertTrue("alias" in zone_file)
         self.assertTrue("$ttl" in zone_file)
         self.assertTrue("$origin" in zone_file)
 
@@ -73,6 +75,7 @@ class ZoneFileTests(unittest.TestCase):
         self.assertTrue("ns" in zone_file)
         self.assertTrue("a" in zone_file)
         self.assertTrue("cname" in zone_file)
+        self.assertTrue("alias" in zone_file)
         self.assertTrue("$ttl" in zone_file)
         self.assertTrue("$origin" in zone_file)
 
